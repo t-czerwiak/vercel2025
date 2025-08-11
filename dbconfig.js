@@ -2,11 +2,16 @@
 // export POSTGRES_USER=default
 // export POSTGRES_PASSWORD=xxxxx
 // 
+
+
 export const config = {
-    host :process.env.POSTGRES_HOST,
-    database:"ort-prueba",
-    user:process.env.POSTGRES_USER,
-    password:process.env.POSTGRES_PASSWORD,
+    host :process.env.PGHOST,
+    database:process.env.PGDATABASE,
+    user:process.env.PGUSER,
+    password:process.env.PGPASSWORD,
     port:5432,
     ssl: true
 }
+
+
+ 

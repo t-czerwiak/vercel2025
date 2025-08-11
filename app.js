@@ -1,5 +1,6 @@
 import {config} from './dbconfig.js'
 import express from "express";
+import 'dotenv/config'
 
 import pkg from 'pg'
 const {Client} = pkg;

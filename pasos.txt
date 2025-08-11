@@ -3,7 +3,17 @@
 3) git init
 4) add .gitignore
 5) git config user.email "leandro.galanterni@ort.edu.ar"
-6) ir a github y crear repo , puede ser private
-7) git remote add origin https://github.com/lgalant/vercel2025.git
-git branch -M master
-git push -u origin master
+6) git add .
+7) git commit -m "first commit"
+8) ir a github y crear repo , puede ser private
+9) git remote add origin https://github.com/lgalant/vercel2025.git
+10) git branch -M master
+11) git push -u origin master
+12) vercel create project
+13)  Adjust GitHub App Permissions → add permission in GitHub
+14) import + deploy
+15) test / and /about
+16) storage -> create db
+17) connect project
+18) copy variables to .env
+19) connect via pgadmin, run sql script
