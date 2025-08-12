@@ -1,7 +1,6 @@
 {
   "name": "vercel25",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +14,14 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "pg": "^8.16.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgalant/vercel2025.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lgalant/vercel2025/issues"
+  },
+  "homepage": "https://github.com/lgalant/vercel2025#readme",
+  "description": ""
 }
