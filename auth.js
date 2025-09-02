@@ -33,7 +33,7 @@ app.post('/login', async (req, res) => {
    const passOK=await bcrypt.compare(user.password,dbUser.password);
    if (passOK)
    {
-     res.send(nombre: dbUser.nombre)
+     res.send({nombre: dbUser.nombre})
    } else {     res.send("Clave invalida" )}
  } catch (error) {
 return res.status(500).json({ message: error.message });
