@@ -1,15 +1,15 @@
-import { executeQuery } from '../services/dbService.js';
+import { executeQuery } from '../services/dbServices.js';
 
 export async function crearCancion(req, res) {
-  const { id, nombre } = req.body;
-  if (!id || !nombre) {
-    return res.status(400).json({ message: 'ID y nombre requeridos' });
+  const { nombre } = req.body;
+  if (!nombre) {
+    return res.status(400).json({ message: 'Nombre requerido' });
   }
 
   try {
     const result = await executeQuery(
-      'INSERT INTO cancion (id, nombre) VALUES ($1, $2) RETURNING *',
-      [id, nombre]
+      'INSERT INTO cancion (nombre) VALUES ($1) RETURNING *',
+      [nombre]
     );
     res.status(201).json({ message: 'Canción creada', data: result.rows[0] });
   } catch (error) {

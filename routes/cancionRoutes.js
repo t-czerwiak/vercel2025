@@ -1,6 +1,6 @@
 import express from 'express';
 import { crearCancion, actualizarCancion, eliminarCancion } from '../controllers/cancionController.js';
-import { verifyToken, verifyAdmin } from '../middlewares/auth.js';
+import { verifyToken, verifyAdmin } from '../middleware/auth.js';
 
 const router = express.Router();
 

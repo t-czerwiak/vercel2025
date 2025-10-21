@@ -1,4 +1,4 @@
-import { executeQuery } from '../services/dbService.js';
+import { executeQuery } from '../services/dbServices.js';
 
 export async function registrarEscucha(req, res) {
   const { id } = req.body;  // id de canción

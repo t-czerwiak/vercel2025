@@ -12,7 +12,7 @@ export function verifyToken(req, res, next) {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || "contraseña");
+    const decoded = jwt.verify(token, "contraseña");
     req.user = decoded; // guardamos datos del usuario en la request
     next();
   } catch (error) {

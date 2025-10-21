@@ -1,6 +1,6 @@
 import express from 'express';
 import { registrarEscucha } from '../controllers/escuchaController.js';
-import { verifyToken } from '../middlewares/auth.js';
+import { verifyToken } from '../middleware/auth.js';
 
 const router = express.Router();
 

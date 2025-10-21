@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { executeQuery } from '../services/dbService.js';
+import { executeQuery } from '../services/dbServices.js';
 
 export async function crearUsuario(req, res) {
   const { nombre, password } = req.body;
@@ -71,7 +71,7 @@ export async function login(req, res) {
 
     // No retornar password
     const { password: _, ...userWithoutPassword } = dbUser ;
-    res.json({ token, user: userWithoutPassword });
+    res.json({ token });
   } catch (error) {
     console.error('Error en login:', error);
     return res.status(500).json({ message: error.message });
